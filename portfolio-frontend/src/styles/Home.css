@@ -1,0 +1,53 @@
+/* src/styles/Home.css */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    text-align: center;
+     color: var(--text-color);
+  }
+
+  
+  .profile-photo {
+    border: 3px solid var(--primary-color);
+  }
+  .home-content {
+    max-width: 600px;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .intro {
+    font-size: 1rem;
+    color: #333;
+    margin: 1rem 0;
+  }
+  
+  .cta-buttons {
+    margin-top: 1.5rem;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
