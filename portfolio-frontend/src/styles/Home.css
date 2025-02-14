@@ -15,6 +15,7 @@
   }
   .home-content {
     max-width: 600px;
+    padding: 1rem;
   }
   
   .profile-photo {
@@ -50,4 +51,23 @@
   
   .btn:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 0.5rem;
+    }
+  
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .tagline {
+      font-size: 1rem;
+    }
+  
+    .intro {
+      font-size: 0.9rem;
+    }
   }

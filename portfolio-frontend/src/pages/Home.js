@@ -1,8 +1,16 @@
 import React from "react";
 import profilePhoto from "../assets/profile.jpg"; // Add your photo in the assets folder
 import "../styles/Home.css"
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    className="home"
+  >
     <div className="home">
       <div className="home-content">
         <img src={profilePhoto} alt="Lian B. Hong" className="profile-photo" />
@@ -19,6 +27,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 };
 

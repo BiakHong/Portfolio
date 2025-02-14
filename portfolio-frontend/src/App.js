@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import "./App.css";
+import Blog from "./pages/Blog";
 
 function App() {
   const [darkMode, setDarkMode] = useState(
@@ -35,6 +36,7 @@ function App() {
           <Route path="/projects" element={<Projects darkMode={darkMode} />} />
           <Route path="/skills" element={<Skills darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
     </div>
