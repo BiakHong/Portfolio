@@ -1,21 +1,28 @@
-/* src/styles/Skills.css */
+/* Skills Section */
 .skills {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .skills h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .skills-list h2 {
-    color: #007bff;
-    margin-top: 1.5rem;
-  }
-  
-  .skills-list p {
-    color: #333;
-    line-height: 1.6;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.skills-list {
+  max-width: 900px;
+}
+
+.skills-list h2 {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #ffa500;
+}
+
+.skills-list p {
+  font-size: 18px;
+  color: #c5c5c5;
+  line-height: 1.6;
+}
+
+.skills-list strong {
+  font-weight: bold;
+}

@@ -1,16 +1,25 @@
 // src/components/Navbar.js
-import { Link } from "react-router-dom";
-import "../styles/Navbar.css"
+import React from "react";
+import "../styles/Navbar.css";
+
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn(`Section with id "${id}" not found.`);
+    }
+  };
+
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Me</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/skills">Skills</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/blog">Blog</Link></li>
+        <li><button onClick={() => scrollToSection("home")}>Home</button></li>
+        <li><button onClick={() => scrollToSection("about")}>About</button></li>
+        <li><button onClick={() => scrollToSection("projects")}>Projects</button></li>
+        <li><button onClick={() => scrollToSection("skills")}>Skills</button></li>
+        <li><button onClick={() => scrollToSection("contact")}>Contact</button></li>
       </ul>
     </nav>
   );

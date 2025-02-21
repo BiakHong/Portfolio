@@ -1,38 +1,71 @@
-/* src/styles/Contact.css */
+/* Contact Section */
 .contact {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .contact h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-info {
-    text-align: center;
-  }
-  
-  .contact-info p {
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .contact-info ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-info li {
-    margin: 0.5rem 0;
-  }
-  
-  .contact-info a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.contact-info {
+  font-size: 18px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info li {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.comment-list {
+  margin-top: 40px;
+}
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comment-form button {
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+  background-color: #ff9900;
+}
+
+.comment {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.comment p {
+  font-size: 16px;
+}
+
+.comment p strong {
+  font-weight: bold;
+}
